@@ -1,29 +1,24 @@
-Ce projet est un détecteur de visage réalisé dans le cadre de l'UV SY32 de l'UTC.
+# Presentation of the project 
 
-Important : pour faire fonctionner les scripts, il est nécessaire d'installer opencv et imutils voici les commandes à entrée dans une console python : 
+This project is a face detector made for the SY32 course at the UTC.
 
-pip install opencv-python
-pip install imutils
+Important : to make the scripts work, it is necessary to install opencv and imutils here are the commands to enter in a python console :
 
+pip install opencv-python pip install imutils
 
-Ce dossier contient 4 fichiers : 
+This folder contains 4 files :
 
-- train.py : qui est le script d'entrainement de mon détecteur de visage, ce fichier génère un modèle de classifier : classifier_model.sav qui est utilisé par test.py 
+* train.py : which is the training script of my face detector, this file generates a classifier model : classifier_model.sav which is used by test.py
 
-- test.py : qui est le fichier permettant de tester le detecteur de visage. Ce fichier génère un fichier detection.txt qui est le résultat des détections
+* test.py : which is the file allowing to test the face detector. This file generates a detection.txt file which is the result of the detections
 
-Tutoriel d'utilisation :
+# How to use it :
 
--Placer le fichier project_train contenant les images d'entrainement et le fichier label_train dans le répertoire de ce projet.
--Placer le fichier test contenant les images dans le répertoire de ce fichier.
+* Place the project_train file containing the training images and the label_train file in the directory of this project. 
+* Place the test file containing the images in the directory of this file.
 
-- Lancer le script train.py pour générer le modèle de classifier (optionnel, celui-ci est déjà dans le repertoire), attention, la génération peut prendre beaucoup de temps selon votre config !
+Run the train.py script to generate the classifier model (optional, it is already in the directory), be careful, the generation can take a lot of time depending on your configuration!
 
-- Lancer le script test.py pour générer le fichier detection.txt
+Run the test.py script to generate the detection.txt file
 
-- (optionnel) Si vous souhaitez voir l'algorithme travailler sur une image visuellement, il est possible de supprimer des commentaires dans le script test.py qui offrent cette fonctionnalité.
-
-
-
-
-
+(optional) If you want to see the algorithm working on an image visually, it is possible to remove the comments at the end of the test.py script. 
